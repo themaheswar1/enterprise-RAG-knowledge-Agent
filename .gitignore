@@ -1,0 +1,23 @@
+# virtual env
+solvenv/
+
+.env
+
+vectorstore/
+
+#Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.vscode/
+
+.DS_Store
+Thumbs.db
+
+
+.cache/
+
+
+*.log/
