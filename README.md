@@ -1,7 +1,8 @@
 
 # Enterprise RAG Knowledge Agent
 
-An AI-powered knowledge assistant that answers employee questions from company documents with precise citations. Built with ChromaDB vector search, Groq LLM, and custom PDF parsing.
+Companies waste enormous time searching internal documents — HR policies, meeting notes, onboarding guides, security guidelines. Employees ask the same questions repeatedly, managers dig through PDFs manually, and knowledge stays locked in files nobody reads.
+This agent solves that. Ask a question in plain English, get a precise answer with exact citations in seconds.
 
 ## 🎯 What It Does
 
