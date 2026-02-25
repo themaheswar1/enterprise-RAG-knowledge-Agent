@@ -1,0 +1,22 @@
+#venv
+solvenv/  
+
+#env variables
+.env   
+#git related files
+.git/      
+.gitignore
+#regular cache
+__pycache__/    
+*.pyc
+*.pyo
+
+#chromaDB
+vectorstore/   
+
+#os files
+.DS_Store     
+Thumbs.db
+
+#logs
+*.log       
