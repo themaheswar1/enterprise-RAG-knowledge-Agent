@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
-    app:
-        build: .
-        ports:
-          - "8501:8501"
-        environment:
-          - GROQ_API_KEY=${GROQ_API_KEY}
-        volumes:
-          - ./docs:/app/docs
-          - ./vectorstore:/app/vectorstore
-        restart: unless-stopped    
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./docs:/app/docs
+      - ./vectorstore:/app/vectorstore
+    restart: unless-stopped        
