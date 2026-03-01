@@ -1,4 +1,8 @@
 
+# LIVE DEMO
+
+[Try it by Clicking Here](https://enterprise-rag-agent.streamlit.app)
+
 # Enterprise RAG Knowledge Agent
 
 Companies waste enormous time searching internal documents — HR policies, meeting notes, onboarding guides, security guidelines. Employees ask the same questions repeatedly, managers dig through PDFs manually, and knowledge stays locked in files nobody reads.
