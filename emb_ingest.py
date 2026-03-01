@@ -80,6 +80,8 @@ def insert_into_chroma(chunks, embeddings, collection: chromadb.Collection):
 #------------
 
 def ingest(reset: bool = True):
+
+    print("Script Started !!")
     start = time.time()
 
     # Step1: Checking pdfs

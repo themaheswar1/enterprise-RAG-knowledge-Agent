@@ -1,7 +1,13 @@
 # Prototyping our agent
 
-from core import load_components, retrieve, build_prompt, generate_answer
+import os
+from emb_ingest import ingest
+
+if not os.path.exists("vectorstore"):
+     ingest()
+
 import streamlit as st
+from core import load_components, retrieve, build_prompt, generate_answer
 
 
 #---- Page config - Must be first streamlit call
