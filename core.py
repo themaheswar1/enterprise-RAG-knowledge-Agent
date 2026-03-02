@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 import chromadb
 from sentence_transformers import SentenceTransformer
 from groq import Groq
+import streamlit as st
 
 load_dotenv()
 
@@ -22,7 +23,15 @@ def load_components():
     embedder    = SentenceTransformer(EMBED_MODEL)
     client      = chromadb.PersistentClient(path=VECTORSTORE_DIR)
     collection  = client.get_collection(name=COLLECTION_NAME)
-    groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+    
+    try:
+        import streamlit as st
+        api_key = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY","")
+    except Exception:
+        api_key = os.getenv("GROQ_API_KEY")    
+    
+    groq_client = Groq(api_key=api_key)
+
     return embedder, collection, groq_client
 
 
